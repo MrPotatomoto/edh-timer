@@ -125,15 +125,15 @@ const App: React.FC = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      p={4}
+      p={2}
     >
       <Flex alignItems={"center"} justifyContent={"space-between"} width="100%">
-        <Heading my={2} textAlign="center">
+        <Heading my={0} textAlign="center">
           EDH Timer
         </Heading>
         <Text fontSize="3xl">{formatTime(totalTime)}</Text>
       </Flex>
-      <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4} mt={2} w="full">
+      <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={2} mt={2} w="full">
         {players.map((player) => (
           <Player
             key={player.id}

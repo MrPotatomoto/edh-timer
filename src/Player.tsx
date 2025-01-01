@@ -99,7 +99,7 @@ const Player: React.FC<PlayerProps> = ({
   return (
     <Box
       borderRadius="md"
-      p={4}
+      p={2}
       textAlign="center"
       flex="1"
       position="relative"
