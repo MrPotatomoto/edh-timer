@@ -5,6 +5,11 @@ import App from "./App";
 import "./index.css";
 
 const theme = extendTheme({
+  config: {
+    initialColorMode: "dark", // Set default to dark mode [1, 2, 3]
+
+    useSystemColorMode: false, // Disable system color mode override [1, 2, 3]
+  },
   colors: {
     brand: {
       50: "#f7edfd",
