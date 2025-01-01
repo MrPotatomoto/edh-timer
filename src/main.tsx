@@ -7,7 +7,6 @@ import "./index.css";
 const theme = extendTheme({
   config: {
     initialColorMode: "dark", // Set default to dark mode
-    useSystemColorMode: false, // Disable system color mode override
   },
   colors: {
     brand: {
