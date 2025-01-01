@@ -111,8 +111,8 @@ const Player: React.FC<PlayerProps> = ({
         icon={<DeleteIcon />}
         size="sm"
         position="absolute"
-        top={14}
-        right={4}
+        top={12}
+        right={2}
         onClick={(e) => {
           e.stopPropagation();
           setIsRemoveDialogOpen(true);
@@ -135,8 +135,8 @@ const Player: React.FC<PlayerProps> = ({
           </Text>
           <IconButton
             position="absolute"
-            right={4}
-            top={4}
+            right={2}
+            top={2}
             aria-label="Edit player name"
             icon={<EditIcon />}
             size="sm"
