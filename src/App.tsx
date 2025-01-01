@@ -11,6 +11,7 @@ import {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
+  Flex,
 } from "@chakra-ui/react";
 import Player from "./Player";
 import { v4 as uuidv4 } from "uuid";
@@ -126,11 +127,12 @@ const App: React.FC = () => {
       alignItems="center"
       p={4}
     >
-      <Heading my={2} textAlign="center">
-        EDH Timer
-      </Heading>
-      <Text>Total Time Used:</Text>
-      <Text fontSize="3xl">{formatTime(totalTime)}</Text>
+      <Flex alignItems={"center"} justifyContent={"space-between"} width="100%">
+        <Heading my={2} textAlign="center">
+          EDH Timer
+        </Heading>
+        <Text fontSize="3xl">{formatTime(totalTime)}</Text>
+      </Flex>
       <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4} mt={2} w="full">
         {players.map((player) => (
           <Player
